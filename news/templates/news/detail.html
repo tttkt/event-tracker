@@ -12,9 +12,11 @@
     </script>
 
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ post.post_title }}</title>
 </head>
 <body>
-{{ post.post_detail }}
+<p>{{ post.post_detail }}</p>
+<a class="button" href="javascript:history.back()" onclick="ga(send,event,'button', 'click', 'Back to List', '{{ post.post_title }}')">Back to List</a>
 </body>
 </html>
